@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roam</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linked to CSS file for styling -->
+    <script src="main.js"></script> <!-- Linked to JS file for functionality -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar">
+            <div class="nav-logo"><img src="images/logo.png" alt="Logo" width="200px"></div>
+            <div class="burger-icon" onclick="toggleMenu()">
+              <div class="burger-line"></div>
+              <div class="burger-line"></div>
+              <div class="burger-line"></div>
+            </div>
+            <ul class="nav-links">
+              <li><a id="nav-link" href="index.html">Home</a></li>
+              <li><a id="nav-link" href="#destinations">Destinations</a></li>
+              <li><a id="nav-link" href="#experiences">Experiences</a></li>
+              <li><a id="nav-link" href="team.html">Meet the Team</a></li>
+              <li>
+                <a id="nav-link" href="saveforlater.html">
+                    Save for Later
+                    <i class="fa fa-heart"></i> <!-- Heart icon for save for later -->
+                </a>
+            </li>
+            </ul>
+          </nav>
+        <h1>Welcome to Your Travel Adventure</h1>
+       </header>
+        <section id="destinations">
+            <table>
+                <tr> <!-- Row 1: Table Header -->
+                    <th>Popular Destinations</th>
+                </tr>
+                <tr> <!-- Row 2: First Row of Destination Cards -->
+                    <td>
+                        <div class="card">
+                            <img src="images/cape-town.png" alt="Cape Town">
+                            <div class="destination">Cape Town</div>
+                            <div class="description">Explore the beauty of Cape Town.</div>
+                            <button class="save-button" onclick="saveForLater({ title: 'Cape Town', description: 'Explore the beauty of Cape Town.' })">
+                                Save for Later</button>
+                            
+                        </div>
+                        
+                    </td>
+                    <td>
+                        <div class="card">
+                            <img src="images/kenya.png" alt="Kenya">
+                            <div class="destination">Kenya</div>
+                            <div class="description">Experience the wildlife of Kenya.</div>
+                            <button class="save-button" onclick="saveForLater({ title: 'Kenya', description: 'Experience th wildlife of Kenya.' })">
+                                Save for Later</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            <img src="images/malawi.png" alt="Malawi">
+                            <div class="destination">Malawi</div>
+                            <div class="description">Discover the warmth of Malawi.</div>
+                            <button class="save-button" onclick="saveForLater({ title: 'Malawi', description: 'Discover the warmth of Malawi.' })">
+                                Save for Later</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr> <!-- Row 3: Second Row of Destination Cards -->
+                    <td>
+                        <div class="card">
+                            <img src="images/morocco.png" alt="Morocco">
+                            <div class="destination">Morocco</div>
+                            <div class="description">Explore the culture of Morocco.</div>
+                            <button class="save-button" onclick="saveForLater({ title: 'Morocco', description: 'Explore the culture of Morocco.' })">
+                                Save for Later</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            <img src="images/botswana.png" alt="Botswana">
+                            <div class="destination">Botswana</div>
+                            <div class="description">Safari through Botswana's wilderness.</div>
+                            <button class="save-button" onclick="saveForLater({ title: 'Botswana', description: 'Safari through Botswana.' })">
+                                Save for Later</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            <img src="images/seychelles.png" alt="Seychelles">
+                            <div class="destination">Seychelles</div>
+                            <div class="description">Relax on the beaches of Seychelles.</div>
+                            <button class="save-button" onclick="saveForLater({ title: 'Seychelles', description: 'Relax on the beaches of Seychelles.' })">
+                                Save for Later</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+    <section id="experiences">
+        <table>
+            <tr> <!-- Row 1: Table Header -->
+                <th>Featured Experiences</th>
+            </tr>
+            <tr> 
+                <td> <!-- Row 2: First Row of Featured Experience Cards -->
+                        <div class="card">
+                            <img src="images/safari.png" alt="safari">
+                        <div class="experience">Safari</div>
+                        <button class="save-button" onclick="saveForLater({ title: 'Safari'})">
+                            Save for Later</button>
+                </td>
+                <td>
+                    <div class="card">
+                        <img src="images/hot-air-balloon.png" alt="hot-air-balloon">
+                        <div class="experience">Hot air ballooning</div>
+                        <button class="save-button" onclick="saveForLater({ title: 'Hot Air Ballooning'})">
+                            Save for Later</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img src="images/beach.png" alt="beach">
+                        <div class="experience">Beach</div>
+                        <button class="save-button" onclick="saveForLater({ title: 'Beach'})">
+                            Save for Later</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td> <!-- Row 3: Second Row of Featured Experience Cards -->
+                    <div class="card">
+                        <img src="images/wine.png" alt="wine">
+                        <div class="experience">Wine</div>
+                        <button class="save-button" onclick="saveForLater({ title: 'Wine'})">
+                            Save for Later</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img src="images/whale-watching.png" alt="whale-watching">
+                        <div class="experience">Whale watching</div>
+                        <button class="save-button" onclick="saveForLater({ title: 'Whale watching'})">
+                            Save for Later</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img src="images/shark-cage-diving.png" alt="shark-cage-diving">
+                        <div class="experience">Shark cage diving</div>
+                        <button class="save-button" onclick="saveForLater({ title: 'Shark Cage diving'})">
+                            Save for Later</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td> <!-- Row 4: Third Row of Featured Experience Cards -->
+                    <div class="card">
+                        <img src="images/beach-activity.png" alt="beach-activities">
+                        <div class="experience">Scuba</div>
+                        <button class="save-button" onclick="saveForLater({ title: 'Scuba'})">
+                            Save for Later</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img src="images/island-hopping.png" alt="island-hopping">
+                        <div class="experience">Island hopping</div>
+                        <button class="save-button" onclick="saveForLater({ title: 'Island Hopping'})">
+                            Save for Later</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img src="images/cruise.png" alt="cruise">
+                        <div class="experience">Cruises</div>
+                        <button class="save-button" onclick="saveForLater({ title: 'Cruise'})">
+                            Save for Later</button>
+                    </div>
+                </td>
+              </tr>
+          </table>
+    </section>
+
+    <section id="testimonial">
+        <div class="testimonial-container">
+            <div class="testimonial-heading">
+            <h2>What Our Travelers Say</h2>
+            </div>
+            <br> <!-- Line break here -->
+            <div class="testimonial">
+                <img src="images/john.png" alt="Customer 1">
+                <p>"Our trip with Roam was incredible. We experienced unforgettable adventures and made lifelong memories. The service was top-notch, and we can't wait for our next journey with Roam!"</p>
+                <p class="customer-name">- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/jane.png" alt="Customer 2">
+                <p>"Roam's attention to detail and personalized itineraries made our vacation perfect. The team at Roam truly understands how to create unique travel experiences."</p>
+                <p class="customer-name">- Jane Smith</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us.</p>
+        <a href="contact.html">Contact Form</a> <!-- Separate contact form page -->
+    </section>
+
+<section id="comments">
+    <h2>Leave a Comment</h2>
+    <form id="comment-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required autocomplete="given-name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required autocomplete="off"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+        <p>&copy; 2023 Cat's Creative Corner</p>
+    </footer>
+</body>
+</html>

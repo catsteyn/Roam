@@ -1,0 +1,98 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #FFE7D6;
+	margin: 0;
+	padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+	background-color: #87A3B5;
+	color: #FFE7D6;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+.nav-logo {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-link {
+	margin-right: 20px;
+	text-decoration: none;
+	color: #fff;
+	transition: color 0.3s;
+}
+
+.nav-link:hover {
+	color: #ff9900;
+}
+
+  /* Responsive Styles */
+@media screen and (max-width: 768px) {
+	.nav-links {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 58px;
+		right: 20px;
+		background-color: #333;
+		text-align: right;
+	}
+
+	.nav-links.active {
+		display: flex;
+	}
+
+	.nav-link {
+		margin: 10px 0;
+	}
+
+	.burger-icon {
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+		padding: 5px;
+		background-color: #FFE7D6;
+	}
+
+	.burger-line {
+		width: 30px;
+		height: 3px;
+		background-color: #87A3B5;
+		margin: 4px 0;
+	}
+}
+
+/* Styles for the team members */
+.team-member {
+    background-color: #FFF;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team-member h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.team-member p {
+    margin: 10px 0;
+}
+
+.team-member-image{
+        width: 350px;
+        height: auto;
+        border-radius: 50%;
+}

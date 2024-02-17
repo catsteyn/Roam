@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roam</title>
+    <!-- Linked to CSS file for styling -->
+    <link rel="stylesheet" href="style-team.css">
+    <!-- Linked to JS file for functionality -->
+    <script src="main.js"></script>
+    <!-- Bootstrap CSS from a CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav id="navbar" class="navbar">
+            <!-- Logo -->
+            <div class="nav-logo"><img src="images/logo.png" alt="Logo" width="200px"></div>
+            <!-- Burger Menu Icon -->
+            <div class="burger-icon" onclick="toggleMenu()">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="#destinations">Destinations</a></li>
+                <li><a class="nav-link" href="#experiences">Experiences</a></li>
+                <li><a class="nav-link" href="team.html">Meet the Team</a></li>
+                <li>
+                    <a class="nav-link" href="saveforlater.html">
+                        Save for Later
+                        <i class="fa fa-heart"></i> <!-- Heart icon for save for later -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <h1>Meet the Team</h1>
+        <div class="team-member">
+            <img class="team-member-image" src="images/kagiso.jpg" alt="Team Member 1">
+            <h2>Kagiso Mthembu</h2>
+            <p>Position: Founder & CEO</p>
+            <p>Description: Kagiso Mthembu is the visionary behind our company...</p>
+        </div>
+
+        <div class="team-member">
+            <img class="team-member-image" src="images/amina.jpg" alt="Team Member 2">
+            <h2>Amina Patel</h2>
+            <p>Position: Marketing Manager</p>
+            <p>Description: Amina Patel is our marketing expert...</p>
+        </div>
+
+        <div class="team-member">
+            <img class="team-member-image" src="images/greg.jpg" alt="Team Member 3">
+            <h2>Greg Van Der Merwe</h2>
+            <p>Position: Travel Planner</p>
+            <p>Description: Greg Van Der Merwe is our crafter of exquisite journeys...</p>
+        </div>
+
+        <div class="team-member">
+            <img class="team-member-image" src="images/stacey.jpg" alt="Team Member 4">
+            <h2>Stacey Thubakgale</h2>
+            <p>Position: IT Manager</p>
+            <p>Description: Stacey Thubakgale is commited to keeping our technological systems cutting edge...</p>
+        </div>
+</body>
+</html>
